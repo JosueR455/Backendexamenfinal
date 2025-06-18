@@ -4,8 +4,8 @@ from app.schemas import ContactoSchema
 
 routes = Blueprint("routes", __name__)
 
-contactos = []  # Almacenamiento en memoria
-contador_id = 1  # ID autoincremental
+contactos = []  
+contador_id = 1  
 
 @routes.route("/contactos", methods=["POST"])
 def crear_contacto():
